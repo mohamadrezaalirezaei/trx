@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Corona Admin</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/jvectormap/jquery-jvectormap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/owl-carousel-2/owl.theme.default.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div
+          class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
+        >
+          <a class="sidebar-brand brand-logo" href="index.html"
+            ><img src="assets/images/logo.svg" alt="logo"
+          /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"
+            ><img src="assets/images/logo-mini.svg" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img
+                    class="img-xs rounded-circle"
+                    src="assets/images/faces/face15.jpg"
+                    alt=""
+                  />
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
+                  <span>Gold Member</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"
+                ><i class="mdi mdi-dots-vertical"></i
+              ></a>
+              <div
+                class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list"
+                aria-labelledby="profile-dropdown"
+              >
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">
+                      Account settings
+                    </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">
+                      Change Password
+                    </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">
+                      To-do list
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              href="#"
+            >
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Deposit</span>
+              
+            </a>
+            
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="make-investment.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Make Investment</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="your-investment.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Your Investment</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="withdrawal.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Withdrawal</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="transfer.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title">Transfer</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              href="tickets-and-supports.html"
+            >
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Tickets and Supports</span>
+            </a>
+            
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              href="your-ADV-tokens.html"
+            >
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Your ADV tokens</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              href="team.html"
+            >
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Team</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              href="user-settings.html"
+            >
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">User Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div
+            class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center"
+          >
+            <a class="navbar-brand brand-logo-mini" href="index.html"
+              ><img src="assets/images/logo-mini.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button
+              class="navbar-toggler navbar-toggler align-self-center"
+              type="button"
+              data-toggle="minimize"
+            >
+              <span class="mdi mdi-menu"></span>
+            </button>
+            
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown d-none d-lg-block">
+                
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="createbuttonDropdown"
+                >
+                  <h6 class="p-3 mb-0">Projects</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-file-outline text-primary"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        Software Development
+                      </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-web text-info"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        UI Development
+                      </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-layers text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">
+                        Software Testing
+                      </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all projects</p>
+                </div>
+              </li>
+              
+              
+              
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  id="profileDropdown"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <div class="navbar-profile">
+                    <img
+                      class="img-xs rounded-circle"
+                      src="assets/images/faces/face15.jpg"
+                      alt=""
+                    />
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">
+                      Henry Klein
+                    </p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="profileDropdown"
+                >
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+              type="button"
+              data-toggle="offcanvas"
+            >
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                     Main Wallet info
+                    </h3>
+                    <h4> Your main wallet balance : <span class="text-primary"> 0.00 TRX</span> </h4> <br>
+                    <h4> Your registered wallet: <span class="text-primary  "> THzY2hvH6cGsJ1wMkQdWHLThg8mY4SxJ8w
+                    </span></h4> <br>
+                    <h4> Your ADVTRX wallet (TRC20) address : </h4> <br>
+                    <div class="text-center">
+                      <!--?xml version="1.0" encoding="UTF-8"?-->
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200" viewBox="0 0 200 200"><rect x="0" y="0" width="200" height="200" fill="#ffffff"></rect><g transform="scale(6.897)"><g transform="translate(0,0)"><path fill-rule="evenodd" d="M10 0L10 2L11 2L11 0ZM12 0L12 1L13 1L13 2L12 2L12 4L13 4L13 3L14 3L14 4L15 4L15 5L17 5L17 6L16 6L16 8L17 8L17 10L16 10L16 9L12 9L12 7L13 7L13 5L11 5L11 6L10 6L10 4L11 4L11 3L8 3L8 4L9 4L9 5L8 5L8 7L9 7L9 8L6 8L6 9L7 9L7 10L5 10L5 11L4 11L4 13L8 13L8 12L9 12L9 13L11 13L11 12L9 12L9 11L8 11L8 10L9 10L9 9L10 9L10 11L11 11L11 9L12 9L12 10L13 10L13 11L12 11L12 13L13 13L13 12L14 12L14 13L15 13L15 15L14 15L14 16L17 16L17 17L16 17L16 18L15 18L15 17L12 17L12 15L13 15L13 14L11 14L11 15L10 15L10 14L5 14L5 15L4 15L4 16L3 16L3 15L2 15L2 14L3 14L3 13L2 13L2 12L3 12L3 11L1 11L1 10L2 10L2 9L5 9L5 8L0 8L0 9L1 9L1 10L0 10L0 16L1 16L1 17L0 17L0 21L1 21L1 17L2 17L2 16L3 16L3 17L4 17L4 16L5 16L5 17L9 17L9 18L6 18L6 19L10 19L10 20L11 20L11 19L10 19L10 18L11 18L11 17L12 17L12 18L13 18L13 19L12 19L12 21L13 21L13 20L14 20L14 21L16 21L16 22L15 22L15 23L14 23L14 24L16 24L16 22L17 22L17 23L18 23L18 24L17 24L17 25L16 25L16 26L15 26L15 25L12 25L12 23L13 23L13 22L11 22L11 21L9 21L9 20L4 20L4 19L2 19L2 21L8 21L8 23L9 23L9 22L11 22L11 24L8 24L8 29L10 29L10 28L11 28L11 27L10 27L10 28L9 28L9 26L10 26L10 25L12 25L12 26L13 26L13 27L12 27L12 29L13 29L13 28L14 28L14 29L15 29L15 28L14 28L14 27L17 27L17 25L19 25L19 23L20 23L20 28L19 28L19 29L20 29L20 28L21 28L21 29L22 29L22 28L21 28L21 26L22 26L22 27L24 27L24 28L25 28L25 29L27 29L27 28L28 28L28 26L29 26L29 25L28 25L28 24L29 24L29 23L27 23L27 24L26 24L26 22L25 22L25 20L26 20L26 19L25 19L25 17L26 17L26 18L28 18L28 17L27 17L27 16L25 16L25 15L26 15L26 14L27 14L27 13L29 13L29 12L26 12L26 11L23 11L23 10L26 10L26 8L25 8L25 9L24 9L24 8L23 8L23 10L22 10L22 8L21 8L21 9L20 9L20 8L19 8L19 9L18 9L18 8L17 8L17 6L18 6L18 7L19 7L19 6L18 6L18 5L19 5L19 4L20 4L20 5L21 5L21 4L20 4L20 3L19 3L19 1L21 1L21 0L19 0L19 1L18 1L18 3L19 3L19 4L18 4L18 5L17 5L17 4L16 4L16 2L17 2L17 1L16 1L16 0ZM8 1L8 2L9 2L9 1ZM14 2L14 3L15 3L15 2ZM9 6L9 7L10 7L10 6ZM11 6L11 7L12 7L12 6ZM14 6L14 8L15 8L15 6ZM20 6L20 7L21 7L21 6ZM10 8L10 9L11 9L11 8ZM27 8L27 10L29 10L29 9L28 9L28 8ZM17 10L17 11L14 11L14 12L18 12L18 13L19 13L19 12L21 12L21 14L19 14L19 15L20 15L20 16L21 16L21 18L22 18L22 17L24 17L24 15L25 15L25 14L26 14L26 12L23 12L23 11L22 11L22 10L21 10L21 11L20 11L20 10ZM5 11L5 12L7 12L7 11ZM21 11L21 12L22 12L22 11ZM22 13L22 14L25 14L25 13ZM17 14L17 16L18 16L18 18L19 18L19 20L18 20L18 19L17 19L17 18L16 18L16 19L14 19L14 20L16 20L16 21L17 21L17 20L18 20L18 21L20 21L20 18L19 18L19 16L18 16L18 14ZM6 15L6 16L7 16L7 15ZM21 15L21 16L22 16L22 15ZM28 15L28 16L29 16L29 15ZM9 16L9 17L10 17L10 16ZM22 19L22 20L23 20L23 19ZM24 19L24 20L25 20L25 19ZM27 19L27 20L28 20L28 19ZM21 21L21 24L24 24L24 21ZM22 22L22 23L23 23L23 22ZM25 24L25 26L26 26L26 24ZM22 25L22 26L24 26L24 25ZM18 26L18 27L19 27L19 26ZM25 27L25 28L27 28L27 27ZM17 28L17 29L18 29L18 28ZM0 0L0 7L7 7L7 0ZM1 1L1 6L6 6L6 1ZM2 2L2 5L5 5L5 2ZM22 0L22 7L29 7L29 0ZM23 1L23 6L28 6L28 1ZM24 2L24 5L27 5L27 2ZM0 22L0 29L7 29L7 22ZM1 23L1 28L6 28L6 23ZM2 24L2 27L5 27L5 24Z" fill="#000000"></path></g></g></svg>
+
+                  </div>
+                  <div class="mt-3 text-center">
+                    <span class="text-secondary">TGYdi8Ak8MBfLtx4j5zyhHpGmhzj1khbmS</span>
+                </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Deposit to main wallet (hash)
+                     </h3>
+                     <p class="card-title-desc">
+                      Scan the QR code to get system wallet address and send only <b>TRON tokens</b> to the wallet.
+                      <br>
+                      Next you should put the transaction hash in the below field.
+                      <br>
+                      <strong>Be consider you should only pay by your wallet address that specified in your account.</strong>
+                  </p>
+                     <form class="mt-5" action="https://advtrx.com/user/deposit-to-wallet/save-request" method="POST">
+                      <input type="hidden" name="_token" value="d4bxYDstFApuPGCY5ZgRL5tHH1dExMDoBnGfITI6">                            <div class="form-group">
+                          <label>The transaction hash</label>
+                          <input type="text" class="form-control" name="trans_id" required="" maxlength="64" placeholder="The transaction id (hash)">
+                      </div>
+                      <button type="submit" class="btn btn-outline-primary   btn-md  mt-4">Increase balance</button>
+                  </form> 
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card mt-3">
+                    <div class="card-body">
+                        <h4 class="card-title"> Deposit history
+                        </h4>
+                        </p>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th> Sender</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Issued at</th>
+                                <th>Details</th>
+    
+    
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>THzY2h***4SxJ8w	</td>
+                                <td>30.0 TRX	</td>
+                                <td><label class="badge badge-success">Paid</label></td>
+                                <td>2023-02-01 12:12	</td>
+                                <td>View</td>
+                              </tr>
+                              <tr>
+                                <td>THzY2h***4SxJ8w	</td>
+                                <td>30.0 TRX	</td>
+                                <td><label class="badge badge-success">Paid</label></td>
+                                <td>2023-02-01 12:12	</td>
+                                <td>View</td>
+                              </tr>
+                              <tr>
+                                <td>THzY2h***4SxJ8w	</td>
+                                <td>30.0 TRX	</td>
+                                <td><label class="badge badge-success">Paid</label></td>
+                                <td>2023-02-01 12:12	</td>
+                                <td>View</td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+            </div>
+          </div>
+            
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
