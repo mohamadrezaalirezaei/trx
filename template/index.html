@@ -74,44 +74,35 @@
                 class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list"
                 aria-labelledby="profile-dropdown"
               >
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-primary"></i>
-                    </div>
+              <a href="user-settings.html" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-dark rounded-circle">
+                    <i class="mdi mdi-settings text-info"></i>
                   </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">
-                      Account settings
-                    </p>
-                  </div>
-                </a>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject ellipsis mb-1 text-small">
+                    User Settings
+                  </p>
+                </div>
+              </a>
+                
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
+                <a href="user-info.html" class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-onepassword text-info"></i>
+                      <i class="mdi mdi-information-outline text-primary" style="font-size: 20px;"></i>
                     </div>
                   </div>
                   <div class="preview-item-content">
                     <p class="preview-subject ellipsis mb-1 text-small">
-                      Change Password
+                      User Info
                     </p>
                   </div>
                 </a>
+                
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-calendar-today text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">
-                      To-do list
-                    </p>
-                  </div>
-                </a>
+                
               </div>
             </div>
           </li>
@@ -149,14 +140,7 @@
               <span class="menu-title">Make Investment</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="your-investment.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-cash-multiple"></i>
-              </span>
-              <span class="menu-title">Your Investment</span>
-            </a>
-          </li>
+          
           <li class="nav-item menu-items">
             <a class="nav-link" href="withdrawal.html">
               <span class="menu-icon">
@@ -209,17 +193,7 @@
               <span class="menu-title">Team</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
-            <a
-              class="nav-link"
-              href="user-settings.html"
-            >
-              <span class="menu-icon">
-                <i class="mdi mdi-settings"></i>
-              </span>
-              <span class="menu-title">User Settings</span>
-            </a>
-          </li>
+          
         </ul>
       </nav>
       <!-- partial -->
@@ -242,6 +216,14 @@
               <span class="mdi mdi-menu"></span>
             </button>
             
+            
+            <button
+              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+              type="button"
+              data-toggle="offcanvas"
+            >
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown d-none d-lg-block">
                 
@@ -293,9 +275,7 @@
                   <p class="p-3 mb-0 text-center">See all projects</p>
                 </div>
               </li>
-              
-              
-              
+            
               <li class="nav-item dropdown">
                 <a
                   class="nav-link"
@@ -311,6 +291,7 @@
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
+
                 <div
                   class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                   aria-labelledby="profileDropdown"
@@ -341,14 +322,7 @@
                   
                 </div>
               </li>
-            </ul>
-            <button
-              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
-              type="button"
-              data-toggle="offcanvas"
-            >
-              <span class="mdi mdi-format-line-spacing"></span>
-            </button>
+            
           </div>
         </nav>
         <!-- partial -->
@@ -557,6 +531,19 @@
                 </div>
               </div>
             </div>
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body mt-3">
+                  <h4 class="card-title text-white">Recent net profit</h4>
+                  <div class="table-responsive mt-4">
+                    <div class="alert alert-info">
+                      <i class="mdi mdi-information" style="font-size: 20px; vertical-align: middle"></i>
+                     <span> There is no Recent Net Profit history to show.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
           </div>
           <div class="row">
             <div class="col-sm-6 grid-margin">

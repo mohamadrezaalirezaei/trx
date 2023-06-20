@@ -88,7 +88,7 @@
               </a>
                 
                 <div class="dropdown-divider"></div>
-                <a href="user-info.html" class="dropdown-item preview-item">
+                <a href="#" class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-dark rounded-circle">
                       <i class="mdi mdi-information-outline text-primary" style="font-size: 20px;"></i>
@@ -159,7 +159,7 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              href="#"
+              href="tickets-and-supports.html"
              
             >
               <span class="menu-icon">
@@ -328,122 +328,67 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-                <div class="card">
+                <div class="col-md-12">
+                  <div class="card">
                     <div class="card-body">
-                        <p class="fw-medium text-white fs-0 mt-3">
-                          Please explain your problem and the support team will come back to you
-                          soon.
-                        </p>
-                        <form id="frm-ticket" method="post" action="https://advtrx.com/user/support/save-issue" enctype="multipart/form-data">
-                          <input type="hidden" name="_token" value="4Y0v1a1DqHPWnMqNAy8hjSk3UO6IsQZAH1rEjwKe">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="d-block mt-2 form-group">
-                                <label class="form-label text-white" for="txt_title">Subject</label>
-                                <input type="text" class="form-control bg-dark text-white" id="txt_title" name="title" value="" maxlength="150" required="">
-                              </div>
-                            </div>
-                
-                            <div class="col-md-6">
-                              <div class="d-block mt-2 form-group">
-                                <label class="form-label text-white" for="sel_section">Category</label>
-                                <select class="form-select bg-dark text-white" aria-label="Select question category" name="section" id="sel_section" required="" onfocus="this.size=6;" onblur="this.size=0;" onchange="this.size=1; this.blur()">
-                                  <option selected="" value="">Select question category</option>
-                                  <option value="2">Account</option>
-                                  <option value="5">Deposit wallet</option>
-                                  <option value="4">General</option>
-                                  <option value="1">Investment</option>
-                                  <option value="6">Inviation system</option>
-                                  <option value="3">Withdrawal</option>
-                                </select>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex">
+                            <div class="flex-grow-1 align-self-center">
+                              <div class="text-white">
+                                <h5 class="mb-1"> Your email : <span class="text-primary"> laxantoni@gmail.com </span> </h5>
+                                <span class="text-white d-block mt-2">Your invitation code : <b class="text-primary">b9pta1</b></span>
+                                <p class="mb-0 mt-3">
+                                  <span class="text-white d-block">Your wallet :</span>
+                                  <span class="d-block d-none d-sm-block mt-2 text-primary " style="font-size: 20px;">
+                                    THzY2hvH6cGsJ1wMkQdWHLThg8mY4SxJ8w</span>
+                                  <span class="d-block d-sm-none mt-2 text-primary" style="font-size: 12px;">
+                                    THzY2hvH6cGsJ1wMkQdWHLThg8mY4SxJ8w</span>
+                                  
+                                </p>
                               </div>
                             </div>
                           </div>
-                
-                          <div class="row">
-                            <div class="col-md-6 col-12">
-                              <div class="d-block mt-2 form-group">
-                                <label class="form-label text-white" for="txt_message">Explain your problem</label>
-                                <textarea class="form-control bg-dark text-white" id="txt_message" name="message" maxlength="2000" required=""></textarea>
-                              </div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                              <div class="d-block mt-2 form-group">
-                                <label class="d-block form-label text-white" for="fli_attach">Attach your file
-                                  <span class="d-block mt-2 mb-2 fs--0 text-soft-info text-white">
-                                    Only zip, rar and image files that are limited to 300KB.
-                                  </span>
-                                </label>
-                                <input class="form-control text-white bg-dark" id="attachment" name="attachment" type="file">
-                                <div style="text-align: end; font-size: 15px;">
-                                  <a href="" class="text-danger" id="remove">Remove attachment</a>
+                        </div>
+        
+                        <div class="col-12 mb-3 mt-3 align-self-center">
+                          <div class="text-lg-center mt-4 mt-lg-0">
+                            <div class="row">
+                              <div class="col-4">
+                                <div>
+                                  <p class="text-white text-truncate mb-2">
+                                    Main wallet
+                                  </p>
+                                  <h5 class="mb-0 text-primary">0.00 TRX</h5>
                                 </div>
-                
+                              </div>
+                              <div class="col-4">
+                                <div>
+                                  <p class="text-white text-truncate mb-2">
+                                    Team wallet
+                                  </p>
+                                  <h5 class="mb-0 text-primary">10.00 TRX</h5>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div>
+                                  <p class="text-white text-truncate mb-2">
+                                    ADV wallet
+                                  </p>
+                                  <h5 class="mb-0 text-primary">0 ADV</h5>
+                                </div>
                               </div>
                             </div>
-                            
                           </div>
-                
-                          <button class="btn btn-outline-primary mt-3 btn-sm" type="submit">
-                            Send ticket
-                          </button>
-                        </form>
-                      </div>
-                </div>
-                <div class="card mt-3">
-                <div class="card-body mt-3">
-                    <h5 class="card-title text-white">Recent support tickets</h5>
-                    <div class="table-responsive mt-4">
-                      <div class="alert alert-info">
-                        <i class="mdi mdi-information" style="font-size: 20px; vertical-align: middle;"></i>
-                       <span> There is no deposit history to show.</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                  <div class="card mt-3">
-                    <div class="card-body">
-                              <h4 class="card-title">Recent Support Tickets</h4>
-                              </p>
-                              <div class="table-responsive">
-                                <table class="table">
-                                  <thead>
-                                    <tr>
-                                      <th>Subject</th>
-                                      <th>Problem category</th>
-                                      <th>Problem</th>
-                                      <th>Issued at</th>
-                                      <th>Details</th>
-          
-          
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>account balance</td>
-                                      <td>account</td>
-                                      <td><div id="textContainer" style="width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur earum praesentium ipsam consequatur dolorum quisquam animi possimus labore dolor nesciunt? Ipsam quae beatae consequuntur iusto ut unde vero dicta totam.
-                                      </div></td>
-                                      <td>2023-02-01 12:12</td>
-                                      <td><label class="badge badge-success">Sent</label></td>
-                                    </tr>
-                                    <tr>
-                                      <td>asdasd	</td>
-                                      <td>general</td>
-                                      <td><div id="textContainer" style="width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur earum praesentium ipsam consequatur dolorum quisquam animi possimus labore dolor nesciunt? Ipsam quae beatae consequuntur iusto ut unde vero dicta totam.
-                                      </div></td><td>2023-02-01 12:12	</td>
-                                      <td><label class="badge badge-success">Sent</label></td>
-                                    </tr>
-                                    
-                                    
-                                  </tbody>
-                                </table>
-                              </div>
-                    </div>
+              </div>
                   </div>
+                </div>  
             </div>
             
         </div>
@@ -453,7 +398,6 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
