@@ -341,14 +341,14 @@
                             <div class="col-md-6">
                               <div class="d-block mt-2 form-group">
                                 <label class="form-label text-white" for="txt_title">Subject</label>
-                                <input type="text" class="form-control bg-dark text-white" id="txt_title" name="title" value="" maxlength="150" required="">
+                                <input type="text" class="form-control text-white" id="txt_title" name="title" value="" maxlength="150" required="">
                               </div>
                             </div>
                 
                             <div class="col-md-6">
-                              <div class="d-block mt-2 form-group">
+                              <div class="d-block mt-2 form-group ">
                                 <label class="form-label text-white" for="sel_section">Category</label>
-                                <select class="form-select bg-dark text-white" aria-label="Select question category" name="section" id="sel_section" required="" onfocus="this.size=6;" onblur="this.size=0;" onchange="this.size=1; this.blur()">
+                                <select style="background-color: #2a3038; border: none;" class="form-select text-white " aria-label="Select question category" name="section" id="sel_section" required="" onfocus="this.size=6;" onblur="this.size=0;" onchange="this.size=1; this.blur()">
                                   <option selected="" value="">Select question category</option>
                                   <option value="2">Account</option>
                                   <option value="5">Deposit wallet</option>
@@ -365,7 +365,7 @@
                             <div class="col-md-6 col-12">
                               <div class="d-block mt-2 form-group">
                                 <label class="form-label text-white" for="txt_message">Explain your problem</label>
-                                <textarea class="form-control bg-dark text-white" id="txt_message" name="message" maxlength="2000" required=""></textarea>
+                                <textarea class="form-control text-white" id="txt_message" name="message" maxlength="2000" required=""></textarea>
                               </div>
                             </div>
                             <div class="col-md-6 col-12">
@@ -375,9 +375,9 @@
                                     Only zip, rar and image files that are limited to 300KB.
                                   </span>
                                 </label>
-                                <input class="form-control text-white bg-dark" id="attachment" name="attachment" type="file">
+                                <input class="form-control text-white" id="attachment" name="attachment" type="file">
                                 <div style="text-align: end; font-size: 15px;">
-                                  <a href="" class="text-danger" id="remove">Remove attachment</a>
+                                  <a href="#" class="text-danger" id="remove">Remove attachment</a>
                                 </div>
                 
                               </div>
@@ -454,7 +454,14 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    
+    <script>
+      const x= document.querySelector('#remove')
+      const y =document.querySelector('#attachment')
+     x.addEventListener('click',()=>{
+      console.log("asasdsd")
+      y.value =''
+       })
+    </script>
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
